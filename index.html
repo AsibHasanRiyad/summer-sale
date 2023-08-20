@@ -46,7 +46,7 @@
                 <!-- Kitchenware -->
                 <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" >
                     <!-- kitchen card 1 -->
-                    <div class=" bg-white shadow-sm p-5 card rounded-md">
+                    <div onclick="itemDisplay('kitchen-title-1'), priceCalculator('kitchen-1-price')  " class=" bg-white shadow-sm p-5 card rounded-md">
                         <figure class="bg-[#F3F3F3] p-5 h-[200px] rounded-lg"><img src="/images/prod1.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -56,12 +56,12 @@
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">K. Accessories</h2>
-                          <p class="text-gray-400 text-xl">39.00 TK</p>
+                          <h2 id="kitchen-title-1" class="card-title">K. Accessories 1</h2>
+                          <p class="text-gray-400 text-xl"> <span id="kitchen-1-price">39.00</span> TK</p>
                         </div>
                       </div>
                     <!-- kitchen card 2 -->
-                    <div class="  bg-white shadow-sm p-5 card rounded-md">
+                    <div onclick="itemDisplay('kitchen-title-2') , priceCalculator('kitchen-2-price')  " class="  bg-white shadow-sm p-5 card rounded-md">
                         <figure class=" bg-[#F3F3F3] p-5 h-[200px]  rounded-lg"><img src="/images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -71,12 +71,12 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">K. Accessories</h2>
-                          <p class="text-gray-400 text-xl">25.00 TK</p>
+                          <h2 id="kitchen-title-2" class="card-title">K. Accessories 2</h2>
+                          <p class="text-gray-400 text-xl"><span id="kitchen-2-price">25.00</span> </p>
                         </div>
                       </div>
                     <!-- kitchen card 3 -->
-                    <div class="  bg-white shadow-sm p-5 card  rounded-md">
+                    <div onclick="itemDisplay('kitchen-title-3') , priceCalculator('kitchen-3-price')  "  class="  bg-white shadow-sm p-5 card  rounded-md">
                         <figure class=" bg-[#F3F3F3] p-5 h-[200px]    rounded-lg"><img src="/images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -86,8 +86,8 @@
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" checked />
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Home Cooker</h2>
-                          <p class="text-gray-400 text-xl">49.00 TK</p>
+                          <h2 id="kitchen-title-3" class="card-title">Home Cooker</h2>
+                          <p class="text-gray-400 text-xl"><span id="kitchen-3-price">49.00</span> </p>
                         </div>
                       </div>
                 </div>
@@ -95,7 +95,7 @@
                 <h1 class="text-4xl font-medium mt-14 mb-8">Sportswear</h1>
                 <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" >
                     <!-- Sportswear card 1 -->
-                    <div class="  bg-white shadow-sm p-5 card    rounded-md">
+                    <div onclick="itemDisplay('sports-title-1'), priceCalculator('sports-1-price')  "   class="  bg-white shadow-sm p-5 card    rounded-md">
                         <figure class=" bg-[#F3F3F3] p-5 h-[200px]     rounded-lg"><img src="/images/prod4.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -105,12 +105,12 @@
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Sports Back Cap</h2>
-                          <p class="text-gray-400 text-xl">49.00 TK</p>
+                          <h2 id="sports-title-1" class="card-title">Sports Back Cap</h2>
+                          <p class="text-gray-400 text-xl"> <span id="sports-1-price">49.00</span> TK</p>
                         </div>
                       </div>
                     <!-- Sportswear card 2 -->
-                    <div class="  bg-white shadow-sm p-5 card  rounded-md">
+                    <div onclick="itemDisplay('sports-title-2') , priceCalculator('sports-2-price') "  class="  bg-white shadow-sm p-5 card  rounded-md">
                         <figure class=" bg-[#F3F3F3]  p-5 h-[200px]   rounded-lg"><img src="/images/prod5.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -120,12 +120,12 @@
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" checked/>
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Full Jersey Set</h2>
-                          <p class="text-gray-400 text-xl">69.00 TK</p>
+                          <h2 id="sports-title-2" class="card-title">Full Jersey Set</h2>
+                          <p class="text-gray-400 text-xl"> <span id="sports-2-price">69.00</span>  TK</p>
                         </div>
                       </div>
                     <!-- Sportswear card 3 -->
-                    <div class="  bg-white shadow-sm p-5 card  rounded-md">
+                    <div onclick="itemDisplay('sports-title-3') , priceCalculator('sports-3-price') "  class="  bg-white shadow-sm p-5 card  rounded-md">
                         <figure class=" bg-[#F3F3F3]  p-5 h-[200px]   rounded-lg"><img src="/images/prod6.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -135,8 +135,8 @@
                                 <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]"  />
                                 <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Sports cates</h2>
-                          <p class="text-gray-400 text-xl">159.00 TK</p>
+                          <h2 id="sports-title-3" class="card-title">Sports cates</h2>
+                          <p class="text-gray-400 text-xl"><span id="sports-3-price">159.00</span>   TK</p>
                         </div>
                       </div>
                 </div>
@@ -144,7 +144,7 @@
                 <h1 class="text-4xl font-medium mt-14 mb-8">Furniture</h1>
                 <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" >
                     <!-- Furniture card 1 -->
-                    <div class="  bg-white shadow-sm p-5 card  rounded-md">
+                    <div onclick="itemDisplay('furniture-title-1'), priceCalculator('furniture-1-price') "  class="  bg-white shadow-sm p-5 card  rounded-md">
                         <figure class=" bg-[#F3F3F3]  p-5 h-[200px]   rounded-lg"><img src="/images/prod7.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -154,12 +154,12 @@
                                 <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" checked/>
                                 <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Single Relax Chair</h2>
-                          <p class="text-gray-400 text-xl">185.00 TK</p>
+                          <h2 id="furniture-title-1" class="card-title">Single Relax Chair</h2>
+                          <p class="text-gray-400 text-xl"><span id="furniture-1-price">185.00</span> TK</p>
                         </div>
                       </div>
                     <!-- Furniture card 2 -->
-                    <div class="  bg-white shadow-sm p-5 card    rounded-md">
+                    <div onclick="itemDisplay('furniture-title-2'), priceCalculator('furniture-2-price') "  class="  bg-white shadow-sm p-5 card    rounded-md">
                         <figure class=" bg-[#F3F3F3] p-5 h-[200px]    rounded-lg"><img src="/images/prod8.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -169,12 +169,12 @@
                                 <input type="radio" name="rating-8" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-8" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Children play</h2>
-                          <p class="text-gray-400 text-xl">299.00 TK</p>
+                          <h2 id="furniture-title-2" class="card-title">Children play</h2>
+                          <p class="text-gray-400 text-xl"><span id="furniture-2-price">299.00</span>  TK</p>
                         </div>
                       </div>
                     <!-- Furniture card 3 -->
-                    <div class="  bg-white shadow-sm p-5 card    rounded-md">
+                    <div onclick="itemDisplay('furniture-title-3'), priceCalculator('furniture-3-price') "  class="  bg-white shadow-sm p-5 card    rounded-md">
                         <figure class=" bg-[#F3F3F3]  p-5 h-[200px]   rounded-lg"><img src="/images/prod9.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <div class="rating">
@@ -184,8 +184,8 @@
                                 <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
                               </div>
-                          <h2 class="card-title">Flexible Sofa</h2>
-                          <p class="text-gray-400 text-xl">339.00 TK</p>
+                          <h2 id="furniture-title-3" class="card-title">Flexible Sofa</h2>
+                          <p class="text-gray-400 text-xl"><span id="furniture-3-price">339.00</span>  TK</p>
                         </div>
                       </div>
                 </div>
@@ -195,23 +195,35 @@
                 <div class="bg-white rounded-md p-6 text-center xl:text-start">
                     <h1 class="text-2xl font-medium mb-4">Have coupon?</h1>
                     <div class="btn-group">
-                        <input class="p-4 rounded-l-md border-y border-l border-gray-400 w-44" type="text" placeholder="Coupon code">
-                        <button class="bg-[#E527B2] p-4 rounded-r-md text-xl text-white">Apply</button>
+                        <input id="apply-input" class="p-4 rounded-l-md border-y border-l border-gray-400 w-44" type="text" placeholder="Coupon code">
+                        <button id="apply-button" class="bg-[#E527B2] p-4 rounded-r-md text-xl text-white ">Apply</button>
                       </div>
-                                    <!-- calculation -->
-                <div class=" rounded-md mt-6  " >
-                    <div>
+                </div>
+                                                    <!-- calculation -->
+                <div class=" rounded-md mt-6  bg-white p-6" >
+                    <div id="display-area" class="text-2xl font-normal">
 
                     </div>
                     <hr class="my-3">
-                    <h1 class="text-2xl font-normal" >Total price: <span class="text-gray-500" >257.00TK</span> </h1>
-                    <h1 class="text-2xl font-normal my-4" >Discount : <span class="text-gray-500" >51.40TK</span> </h1>
-                    <h1 class="text-2xl font-normal" >Total: <span class="text-gray-500" >205.60 TK </span></h1>
+                    <h1 class="text-2xl font-normal" >Total price: <span id="total-price" class="text-gray-500" >00 K</span> </h1>
+                    <h1 class="text-2xl font-normal my-4" >Discount : <span id="discount-area" class="text-gray-500" >00 TK</span> </h1>
+                    <h1 class="text-2xl font-normal" >Total: <span id="final-total" class="text-gray-500" >00 TK </span></h1>
                     <hr class="my-3">
                     <div class="items-center text-center">
-                        <button class="bg-[#E527B2] text-md lg:text-xl text-white font-medium px-8 py-3 mt-4 hover:bg-[#ee4bc2] rounded-lg relative">Make Purchase</button>
+                        <!-- <button class="bg-[#E527B2] text-md lg:text-xl text-white font-medium px-8 py-3 mt-4 hover:bg-[#ee4bc2] rounded-lg relative ">Make Purchase</button> -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="purchase" class="bg-[#E527B2] text-md lg:text-xl text-white font-medium px-8 py-3 mt-4 rounded-lg relative " onclick="my_modal_1.showModal()" disabled>Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal">
+                        <form method="" class="modal-box lg:py-16"> 
+                            <div  class="flex justify-center items-center">
+                                <img src="images/congo.png" alt="">
+                            </div>
+                            <h1 class="text-3xl md:text-5xl font-bold py-5">Congratulations</h1>
+                            <p class="text-xl">Your Purchase the product</p>
+                            <button id="go-home" class="bg-[#E527B2] text-md lg:text-xl text-white font-medium px-8 py-3 mt-4 hover:bg-[#ee4bc2] rounded-lg relative ">Go Home</button> 
+                        </form>
+                        </dialog>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -224,6 +236,7 @@
 
 
     <!-- Java script connection -->
+    <script src="js/common.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
