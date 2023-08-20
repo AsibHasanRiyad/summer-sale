@@ -22,10 +22,12 @@ function priceTaker(id) {
     return priceNumber;
 }
 // price calculation;
+
 let totalPrice = 0;
 function priceCalculator(id) {
     const productPrice = priceTaker(id);
     totalPrice = totalPrice + productPrice
+
     // set total price
     const setTotalPrice = document.getElementById('total-price');
     setTotalPrice.innerHTML = `${totalPrice} TK`
@@ -33,11 +35,20 @@ function priceCalculator(id) {
         const finalTotalArea = document.getElementById('final-total')
         finalTotalArea.innerHTML = `${finalTotal} TK`;
 
-        // modal
-        const purchaseButton = document.getElementById('purchase');
-        if (finalTotal > 0) {
-            purchaseButton.disabled = false;
-        }
+
+    // applyButton
+    const applyButton = document.getElementById('apply-button')
+    if (totalPrice>= 200) {
+        applyButton.disabled = false;
+        applyButton.classList.add('bg-pink-500')
+    }
+
+    // modal
+    const purchaseButton = document.getElementById('purchase');
+    if (finalTotal > 0) {
+        purchaseButton.disabled = false;
+        purchaseButton.classList.add('bg-pink-500')
+    }
 }
 
 // discount
@@ -51,7 +62,7 @@ applyButton.addEventListener('click',function(){
         const discountArea = document.getElementById('discount-area');
         discountArea.innerHTML = `${discountTotal} TK`
 
-           // final total
+        // final total
         const finalTotal = (totalPrice - discountTotal).toFixed(2);
         const finalTotalArea = document.getElementById('final-total')
         finalTotalArea.innerHTML = `${finalTotal} TK`;
